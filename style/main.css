@@ -47,7 +47,7 @@ header nav a:hover{
 /* Filme principal*/
 .filme-principal{
     font-size: 16px;
-    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) ,url('/img/capa-lupin.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) ,url('/img/capa-lupin.jpg');
     height: 400px;
     background-size: cover;
     display: flex;
