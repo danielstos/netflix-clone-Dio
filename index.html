@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    
+    <!--responsibilidade-->
+    <link rel="stylesheet" href="./style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./style/modal.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+            
+            <img  class="logo" src="./img/netflix-logo.png" alt="">
+            <!-- <h2 class="logo">NETFLIX</h2>-->   
+            <nav>
+                <a href="#">Iniciar</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+              <div class="trailer">
+                    <video src="./video/Lupin _ Trailer oficial _ Netflix.mp4" controls="true"></video>
+                    
+                  <img src="./img/closed.png" alt="" onclick="toggle()" class="close">
+                </div> 
+        <div class="filme-principal">
+            <div class="container">
+                <img class="titulo" src="./img/lupin-logo.png" alt="">
+                <!--<h3 class="titulo">LUPIN</h3>-->
+                <p class="descricao">Na adolescência, a vida de Assane Diop dá uma guinada radical quando seu pai morre após ser acusado de um crime que não cometeu. Vinte e cinco anos depois, Assane se inspira em "Arsène Lupin, o Ladrão de Casaca" para vingá-lo.</p>
+            
+                <div class="botoes">
+                    <button onclick="toggle()" role="button" class="botao1">
+                        <i class="fas fa-play"></i>
+                        Assistir
+                    </button>
+                    <button onclick="showModal()" role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        Mais Informações
+                    </button>  
+               <div>
+          
+               </div>      
+                </div>                
+            </div> 
+        </div>
+      
+    </main>
+    <div class="carrosel-filmes">  
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="./img/mini1.jpg " alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/mini2.jpg " alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/mini3.jpg " alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/mini4.jpg " alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/mini5.jpg " alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/mini6.jpg " alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/mini7.jpg " alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/mini8.jpg " alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/mini9.jpg " alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/mini10.jpg " alt="">
+            </div>
+        </div>
+    </div>
+    
+   
+<!--Modal-->
+<div class="bg"></div>
+
+
+
+
+<div class="modal">
+
+    <div onclick="hideModal()" class="btn2">X</div>
+
+    <div class="prevModalplayer">
+        <iframe width="850" height="520" src="https://www.youtube.com/embed/FoiQ-Xr8NDI?controls=0&amp;start=6"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <img class="prevModalplayerLogo" src="./img/lupin-logo.png" alt="">
+ 
+        <div class="prevModetails">
+            <div class="details">
+                <p class="prev-year">2021 <img src="./img/idade16.png" alt=""> 1 Parte </p>
+                <p> Já é oficial: Parte 2 em breve </p>
+                <p class="year"> Pl:E1 "Capítulo 1" </p>
+                <p>Anos depois de uma trágica injustiça, Assane tenta acertar as contas e
+                    quitar uma dívida roubando um colar de diamante, mas o roubo não sai
+                    como esperado.</p>
+            </div>
+            <div class="detailselenc">
+                <span>Elenco: Omar Sy, Ludivine Sagnier,
+                    Clotilde Hesme, mais</span><br>
+
+                <span>Gêneros: Francês, Séries dramáticas
+                    sobre crimes, Séries baseadas em
+                    livros </span> <br>
+
+                <span>Cenas e momentos: Espirituosos,
+                    Empolgantes</span>
+
+            </div>
+        </div>
+    </div>
+    <div class="episodeSelector-container">
+        <div class="titleCardListEpisode">
+            <div class="episodeSelector">
+                <div class="episodeName">
+                    <p>Episódios</p>
+                </div>
+                <div class="selectorSeason">
+                    <p>Parte 1</p>
+                </div>
+            </div>
+            <div class="ep-item">
+
+                <div class="epdescricao">
+
+                    <span>1</span><img src="./img/ep1.PNG" alt="">
+                    <div class="descricaotext">
+                        <div class="epnum">
+                            <p>Capítulo 1 </p>
+                            <p>47min</p>
+                        </div>
+                        <p>Anos depois de uma trágica injustiça, Assane tenta acertar as contas e
+                            quitar uma dívida roubando um colar de diamante, mas o roubo não sai
+                            como esperado.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ep-item">
+
+                <div class="epdescricao">
+                    <span>2</span><img src="./img/ep2.PNG" alt="">
+                    <div class="descricaotext">
+                        <div class="epnum">
+                            <p>Capítulo 2</p>
+                            <p>52min</p>
+                        </div>
+                        <p>Assane bola um plano para entrar em contato com Comet, um preso que o
+                            leva a uma pista sobre a morte de Babakar. Anne Pellegrini se abre sobre o
+                            passado.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ep-item">
+
+                <div class="epdescricao">
+                    <span>3</span> <img src="./img/ep3.PNG" alt="">
+                    <div class="descricaotext">
+                        <div class="epnum">
+                            <p>Capítulo 3 </p>
+                            <p>42min</p>
+                        </div>
+                        <p>Assane confronta o comissário Dumont e dá um jeito de despistar a polícia.
+                            A ligação de Hubert Pellegrini com o destino de Babakar vem à tona
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ep-item">
+                <div class="epdescricao">
+                    <span>4</span><img src="./img/ep4.PNG" alt="">
+                    <div class="descricaotext">
+                        <div class="epnum">
+                            <p>Capítulo 4</p>
+                            <p>47min</p>
+                        </div>
+                        <p>Assane pede ajuda a uma jornalista para conseguir provas contra Hubert.
+                            O policial Guédira liga os pontos no caso do assalto ao Louvre.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ep-item">
+                <div class="epdescricao">
+                    <span>5</span><img src="./img/ep5.PNG" alt="">
+                    <div class="descricaotext">
+                        <div class="epnum">
+                            <p>Capítulo 5</p>
+                            <p>43min</p>
+                        </div>
+                        <p>A caminho de Étretat com Claire e Raoul, Assane encontra uma figura
+                            inoportuna. Encurralado, Assane manda uma mensagem ao capitão
+                            Laugier
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div class="moreLikeThis"></div>
+    <!--Conteúdo de titulos semelhantes-->
+<div class="cards-container">
+
+<div class="row">
+    <div class="card">
+        <div class="card-header">
+            <img class="cardimg" src="./img/card1.PNG" alt="">
+        </div>
+        <div class="card-body">
+            <span>95% relevante</span>
+            <div class="year"> <img src="./img/idade14.PNG" alt="">
+                <p>2019</p>
+            </div>
+            <p>
+                As qualificações de um advogado são
+                esperteza e muita lábia. Cursar direito é
+                totalmente opcional. </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img class="cardimg" src="./img/card2.PNG" alt="">
+        </div>
+        <div class="card-body">
+            <div class="year"> <img src="./img/idade16.PNG" alt="">
+                <p>2020</p>
+            </div>
+            <br>
+            <p>
+                Ela quer se casar por amor. Ele prometeu
+                nunca subir ao altar. A paixão entre os
+                dois está prestes a sair do controle.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">
+            <img class="cardimg" src="./img/card3.PNG" alt="">
+        </div>
+        <div class="card-body">
+            <span>98% relevante</span>
+                    <div class="year"> <img src="./img/idade16.PNG" alt="">
+                <p>2021</p>
+            </div>
+            <p>
+                Alguns querem poder. Outros, respostas.
+                Em um mundo completamente
+                desfigurado, o que será que vale a pena
+                salvar?
+
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+                <img class="cardimg" src="./img/card4.PNG" alt="">
+            </div>
+            <div class="card-body">
+                <span>98% relevante</span>
+                <div class="year"> <img src="./img/idade16.PNG" alt="">
+                    <p>2021</p>
+                </div>
+                <p>
+                    Fama e fortuna para uma, amor e família
+                    para a outra. Amigas de longa data, elas
+                    são muito diferentes e muito leais.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img class="cardimg" src="./img/card5.PNG" alt="">
+            </div>
+            <div class="card-body">
+                <span>89% relevante</span>
+                <div class="year"> <img src="./img/idade16.PNG" alt="">
+                    <p>2020</p>
+                </div>
+                <p>
+                    Ele tem seu próprio país, idioma e bandeira,conquistando a admiração de
+                    todos. Menos do governo, é claro.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <img class="cardimg" src="./img/card6.PNG" alt="">
+            </div>
+            <div class="card-body">
+                <span>97% relevante</span>
+                <div class="year"> <img src="./img/idade18.PNG" alt="">
+                    <p>2021</p>
+                </div>
+                <p>
+                    Da Primeira Classe ao Fundo, o trem leva
+                    o que restou da humanidade. A tensão
+                    entre as pessoas pode causar um
+                    desastre.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    <img class="cardimg" src="./img/card7.PNG" alt="">
+                </div>
+                <div class="card-body">
+                    <span>92% relevante</span>
+                    <div class="year"> <img src="./img/idade16.PNG" alt="">
+                        <p>2019</p>
+                    </div>
+                    <p>
+                        Todos conheciam a garota encontrada
+                        morta no bosque. E todos estão mentindo
+                        para o inspetor que está atrás da verdade.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img class="cardimg" src="./img/card8.PNG" alt="">
+                </div>
+                <div class="card-body">
+                    <span>61% relevante</span>
+                    <div class="year"> <img src="./img/idade16.PNG" alt="">
+                        <p>2020</p>
+                    </div>
+                    <p>
+                        Sexo, drogas e alguns chiliques. Uma
+                        festa de Ano-Novo começa em grande
+                        estilo, mas vai ter um final inesperado.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img class="cardimg" src="./img/card9.PNG" alt="">
+                </div>
+                <div class="card-body">
+                    <span>88% relevante</span>
+                    <div class="year"> <img src="./img/idade14.PNG" alt="">
+                        <p>2020</p>
+                    </div>
+                    <p>
+                        Cidade dos sonhos, choque de realidade.
+                        Mas essa dupla dinâmica não vai ficar
+                        parada o destino chegar.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+    <script src="./js/modal.js" ></script>
+    <script src="https://kit.fontawesome.com/9892355348.js" ></script>
+    <script src="./js/owl/jquery.min.js"></script>
+    <script src="./js/owl/owl.carousel.min.js"></script>
+    <script src="./js/setup.js"></script>
+    
+
+</body>
+</html>

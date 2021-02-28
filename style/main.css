@@ -1,0 +1,174 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*elemento base*/
+body{
+ background: var(--preta);
+ font-family: 'Times New Roman', Times, serif;
+ color:#ffff;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+color: var(--vermelho);
+font-family: 'Arial Black', Times;
+font-size: 40px;
+margin-left: 5px;
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: #e5e5e5;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin-right:10px;
+}
+
+header nav a:hover{
+    color: #ffff;
+    font-weight: 700;
+}
+
+
+/* Filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) ,url('/img/capa-lupin.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.logo{
+    height: 3.5rem;
+}
+
+.titulo{
+    margin-top: 15%;
+    height: 3.5rem;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 18px;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao .botao1 i{
+    margin-right: 8px;
+}
+
+.botao1{
+    background-color:white;
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 18px;
+}
+.botao1:hover{
+    background-color:grey;
+}
+
+.container{
+    margin-left: 30px;
+   
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+ 
+
+
+.carrosel-filmes{
+    margin-top: 15px;
+}
+
+.trailer{
+    position:absolute;
+    top:50%;
+    left:30%;
+    transform: translate(-50%,-4%);
+    background:rgba(0,0,0,.95);
+    width: 100%;
+    height: 100%;  
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;  
+    z-index: 2;
+   
+}
+.trailer.active
+{
+    visibility: visible;
+    opacity: 1; 
+    display: block;
+}
+
+.trailer{
+    position: relative;
+    max-width: 720px;
+    outline: none;
+    display: none;
+}
+
+.close{
+    position: absolute;
+    top: 30px;
+    right: -550px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+
+}
+
+
